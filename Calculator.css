@@ -1,0 +1,52 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center; /*align item at row center*/
+    align-items: center; /*align item at column center*/
+    min-height: 100vh;
+}
+
+.Calculator {
+    position: relative;
+    display: grid;
+    height: 300px;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: #857e7e 0px 0px 50px 10px;
+}
+
+.Display {
+    grid-column: span 4;
+    height: 60px;
+    padding: 10px;
+    margin: 5px;
+    text-align: right;
+    border-radius: 5px;
+    border: none;
+    background-color: #d8dadc;
+}
+
+.btn {
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.btnClear {
+    background-color: #ca1414;
+    color: #ffffff;
+}
+
+.btn:active {
+    background-color: #2dceb7
+}
+.btnBackSpace{
+	grid-column: span 2;
+}
